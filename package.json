@@ -1,0 +1,39 @@
+{
+  "name": "react-native-daon-onboarding",
+  "title": "React Native Daon Onboarding",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lim6112j/react-native-daon-onboarding.git",
+    "baseUrl": "https://github.com/lim6112j/react-native-daon-onboarding"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "byeongcheol lim",
+    "email": "lim6112j@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    
+    "react": "16.2.0",
+    "react-native": "^0.52.0",
+    "react-native-windows": "0.52.0"
+
+  },
+  "devDependencies": {
+    
+    "react": "16.2.0",
+    "react-native": "^0.52.0",
+    "react-native-windows": "0.52.0"
+
+  }
+}
