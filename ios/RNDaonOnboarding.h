@@ -4,7 +4,7 @@
 #import "RCTBridgeModule.h"
 #endif
 #import <UIKit/UIKit.h>
-//#import <DaonDocument/DaonDocument.h>
+#import <DaonDocument/DaonDocument.h>
 @interface RNDaonOnboarding : NSObject <RCTBridgeModule>
 
 @end
