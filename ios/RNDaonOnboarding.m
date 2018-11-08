@@ -9,7 +9,7 @@ RCT_EXPORT_MODULE()
     return dispatch_get_main_queue();
 }
 
-RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
+RCT_EXPORT_METHOD(sampleMethod:(RCTResponseSenderBlock)callback)
 {
     // TODO: Implement
     NSString* someString = @"some string made by ben lim";
