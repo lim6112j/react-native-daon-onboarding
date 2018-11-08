@@ -12,7 +12,7 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(sampleMethod:(RCTResponseSenderBlock)callback)
 {
     // TODO: Implement
-    NSString* someString = @"some string made by ben lim";
+    NSString* someString = DaonDocument.version;
     callback(@[someString]);
 }
 
