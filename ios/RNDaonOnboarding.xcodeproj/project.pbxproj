@@ -7,23 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8534174A219404ED007CBCD9 /* DaonDocument.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 8582EE3F2193EED000DC83EE /* DaonDocument.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8534174B219404ED007CBCD9 /* MicroBlink.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 8582EE3E2193EED000DC83EE /* MicroBlink.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8582EE402193EED000DC83EE /* MicroBlink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8582EE3E2193EED000DC83EE /* MicroBlink.framework */; };
+		8582EE412193EED000DC83EE /* DaonDocument.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8582EE3F2193EED000DC83EE /* DaonDocument.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNDaonOnboarding.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNDaonOnboarding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		58B511D91A9E6C8500147676 /* CopyFiles */ = {
+		58B511D91A9E6C8500147676 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstSubfolderSpec = 10;
 			files = (
+				8534174A219404ED007CBCD9 /* DaonDocument.framework in Copy Files */,
+				8534174B219404ED007CBCD9 /* MicroBlink.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNDaonOnboarding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDaonOnboarding.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8582EE3E2193EED000DC83EE /* MicroBlink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicroBlink.framework; path = "../../../../Downloads/iOS/iOS 1.0.3/Daon.DaonDocument.iOS.1.0.3.184/MicroBlink.framework"; sourceTree = "<group>"; };
+		8582EE3F2193EED000DC83EE /* DaonDocument.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaonDocument.framework; path = "../../../../Downloads/iOS/iOS 1.0.3/Daon.DaonDocument.iOS.1.0.3.184/DaonDocument.framework"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNDaonOnboarding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDaonOnboarding.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNDaonOnboarding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDaonOnboarding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8582EE402193EED000DC83EE /* MicroBlink.framework in Frameworks */,
+				8582EE412193EED000DC83EE /* DaonDocument.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +64,17 @@
 				B3E7B5881CC2AC0600A0062D /* RNDaonOnboarding.h */,
 				B3E7B5891CC2AC0600A0062D /* RNDaonOnboarding.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				8582EE3D2193EED000DC83EE /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		8582EE3D2193EED000DC83EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8582EE3F2193EED000DC83EE /* DaonDocument.framework */,
+				8582EE3E2193EED000DC83EE /* MicroBlink.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,7 +86,7 @@
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
-				58B511D91A9E6C8500147676 /* CopyFiles */,
+				58B511D91A9E6C8500147676 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -162,7 +183,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -205,7 +228,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -215,32 +240,38 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Frameworks/**";
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/Frameworks/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNDaonOnboarding;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Frameworks/**";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/Frameworks/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNDaonOnboarding;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};
